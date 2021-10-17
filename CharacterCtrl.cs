@@ -1,3 +1,5 @@
+// 이 파일은 지원 캐릭터를 전반적으로 관리해주는 파일입니다.
+// 뛰기, 점프 등의 애니메이션을 관리합니다.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,7 +64,6 @@ public class APCtrl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("JJ")&&!GameManager.instance.isGameOver)
         {
-            GameManager.instance.HeartDown();
             GameManager.instance.MainCam.GetComponent<CamShakeSmall>().enabled = true;
         }
     }
